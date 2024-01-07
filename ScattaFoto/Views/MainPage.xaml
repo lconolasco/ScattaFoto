@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ScattaFoto.ViewModels"
+             x:Class="ScattaFoto.Views.MainPage"
+             Title="Scatta Foto">
+    <ContentPage.BindingContext>
+        <local:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            >
+
+            <Label 
+                Text="Image"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            <Frame BackgroundColor="PowderBlue" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="500" HeightRequest="320" Padding="10" >
+                <Image Source="{Binding ImageOriginale}" WidthRequest="480" HeightRequest="270" x:Name="imgFoto"/>
+            </Frame>
+            <Frame BackgroundColor="AntiqueWhite" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="500" HeightRequest="320" Padding="10" >
+                <Image Source="{Binding ImageResize}" WidthRequest="480" HeightRequest="270"  />
+            </Frame>
+
+            <Button
+                Text="Scatta Foto"
+                Command="{Binding ScattaFotoCommand}"
+                VerticalOptions="End"
+                HorizontalOptions="Fill" />
+            <Button
+    Text="Carica Foto"
+    Command="{Binding CaricaFotoCommand}"
+    VerticalOptions="End"
+    HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
