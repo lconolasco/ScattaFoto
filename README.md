@@ -15,7 +15,7 @@ Chiunque sia interessato è libero di consultare il codice sorgente e trarne isp
 
 Auguro a tutti un proficuo percorso di studio.
 
-#ScattaFoto PT-br
+# ScattaFoto PT-br
 
 Fruto do meu esforço no estudo autodidata, desenvolvi este aplicativo.
 
@@ -33,7 +33,7 @@ Qualquer pessoa interessada é livre para consultar o código-fonte e se inspira
 
 Desejo a todos um ótimo estudo.
 
-#ScataFoto EN-en
+# ScataFoto EN-en
 
 Resulting from my self-taught study efforts, I developed this app.
 
